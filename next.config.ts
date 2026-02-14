@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/:path*', // apply sa lahat ng routes
-        headers: [
-          
+        source: '/:path*',
+      headers: [
+        { key: 'x-dummy-header', value: 'test' }
           
           
         ],
